@@ -1,6 +1,9 @@
 # OpenGL-2DRobot
-
-
+透過不斷使用 glPushMatrix()、glTranslatef()、glRotatef() 和 glPopMatrix() 實現：
+glPushMatrix(): 儲存當前的座標系統 (父節點位置)。
+glTranslatef(): 將原點移到關節點。
+glRotatef(): 根據動畫變數 (spin1, spin2, 等) 旋轉該部位。
+glPopMatrix(): 恢復到父節點的座標系統，確保下一個部位的變換是獨立的，但仍相對於身體。
 2.(作業環境)
 	作業環境:win11 64bit
 	編譯器:Visual Studio 2022
